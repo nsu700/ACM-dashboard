@@ -1,0 +1,55 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: observability-metrics-custom-allowlist
+  namespace: open-cluster-management-observability
+  labels:
+    cluster.open-cluster-management.io/backup: ''
+data:
+  metrics_list.yaml: |
+    names:
+      - coredns_dns_request_duration_seconds_bucket
+      - coredns_forward_request_duration_seconds_bucket
+      - coredns_forward_request_duration_seconds_sum
+      - cluster_operator_up 
+      - haproxy_up
+      - haproxy_frontend_connections_total
+      - haproxy_frontend_http_responses_total
+      - haproxy_frontend_bytes_in_total
+      - haproxy_frontend_bytes_out_total
+      - haproxy_frontend_bytes_in_total
+      - haproxy_frontend_bytes_out_total
+      - haproxy_frontend_current_sessions
+      - haproxy_frontend_current_queue
+      - haproxy_frontend_max_session_rate
+      - haproxy_frontend_max_sessions
+      - haproxy_backend_http_responses_total
+      - haproxy_backend_response_errors_total
+      - haproxy_backend_bytes_in_total
+      - haproxy_backend_bytes_out_total
+      - haproxy_backend_current_sessions
+      - haproxy_backend_current_queue
+      - haproxy_backend_max_session_rate
+      - haproxy_backend_max_sessions
+      - haproxy_backend_http_average_connect_latency_milliseconds
+      - haproxy_server_connections_total
+      - haproxy_server_http_responses_total
+      - haproxy_server_bytes_in_total
+      - haproxy_server_current_sessions
+      - haproxy_server_max_sessions
+      - haproxy_server_max_session_rate
+      - kube_pod_container_status_restarts_total
+      - kube_horizontalpodautoscaler_spec_min_replicas
+      - kube_horizontalpodautoscaler_status_desired_replicas
+      - kube_horizontalpodautoscaler_status_current_replicas
+      - kube_horizontalpodautoscaler_spec_max_replicas
+      - kube_horizontalpodautoscaler_spec_min_replicas
+      - mapi_machine_set_status_replicas
+      - kube_pod_status_phase
+      - kube_deployment_status_condition
+      - openshift_deploymentconfig_status_replicas_available
+      - coredns_dns_requests_total
+      - coredns_dns_requests_size_bytes_bucket
+      - coredns_dns_responses_rcode_count_total
+      - coredns_dns_requests_duration_milliseconds_bucket
+      - node_os_info
