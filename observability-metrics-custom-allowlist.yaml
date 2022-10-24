@@ -53,3 +53,4 @@ data:
       - coredns_dns_responses_rcode_count_total
       - coredns_dns_requests_duration_milliseconds_bucket
       - node_os_info
+      - cert:time_to_expiration:sec
