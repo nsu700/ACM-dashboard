@@ -1,0 +1,11 @@
+configMapGenerator:
+- name: custom-dashboards
+  files:
+  - ClustersOverview.json
+  - ProjectDetails.json
+generatorOptions:
+  disableNameSuffixHash: true
+  annotations:
+    observability.open-cluster-management.io/dashboard-folder: Custom
+  labels:
+    grafana-custom-dashboard: "true"

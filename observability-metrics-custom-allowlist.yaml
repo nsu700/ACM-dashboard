@@ -45,7 +45,7 @@ data:
       - kube_horizontalpodautoscaler_spec_max_replicas
       - kube_horizontalpodautoscaler_spec_min_replicas
       - mapi_machine_set_status_replicas
-      - kube_pod_status_phase
+      - kube_pod_status_ready
       - kube_deployment_status_condition
       - openshift_deploymentconfig_status_replicas_available
       - coredns_dns_requests_total
@@ -54,3 +54,5 @@ data:
       - coredns_dns_requests_duration_milliseconds_bucket
       - node_os_info
       - cert:time_to_expiration:sec
+      - kube_node_labels
+      - cluster_autoscaler_cluster_cpu_current_cores
