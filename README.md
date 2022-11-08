@@ -8,7 +8,7 @@
 5. Import the json file of dashboard
 
 ## How to import the json file into ACM grafana
-`oc kustomize ./ | oc apply -f -n open-cluster-management-observability`
+`oc kustomize ./ | oc apply -f- -n open-cluster-management-observability`
 
 ## How to enable alerting 
 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.6/html-single/observability/index#configuring-alertmanager
