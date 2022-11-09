@@ -54,5 +54,5 @@ data:
       - coredns_dns_requests_duration_milliseconds_bucket
       - node_os_info
       - cert:time_to_expiration:sec
-      - kube_node_labels
+      - kube_node_role
       - cluster_autoscaler_cluster_cpu_current_cores
