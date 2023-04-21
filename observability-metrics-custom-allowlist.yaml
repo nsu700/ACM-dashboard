@@ -56,3 +56,4 @@ data:
       - cert:time_to_expiration:sec
       - kube_node_role
       - cluster_autoscaler_cluster_cpu_current_cores
+      - prober_probe_total
