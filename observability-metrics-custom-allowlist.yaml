@@ -57,3 +57,5 @@ data:
       - kube_node_role
       - cluster_autoscaler_cluster_cpu_current_cores
       - prober_probe_total
+      - kube_pod_container_resource_requests
+      - kube_pod_container_resource_limits
